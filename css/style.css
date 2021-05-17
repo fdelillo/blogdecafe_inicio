@@ -204,3 +204,31 @@ img {
         column-gap: 2rem;
     }
 }
+
+/** CURSO **/
+.curso {
+    padding: 3REM 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type {
+    border-bottom: none;
+}
+/* El siguiente codigo esta repetido para facilitar la lectura del bloque*/
+.curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.curso__info {
+    font-weight: 400;
+}
+.curso__info,
+.curso__label {
+    font-size: 2rem;
+}
