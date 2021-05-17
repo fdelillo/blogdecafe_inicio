@@ -183,3 +183,24 @@ img {
     padding-bottom: 3rem 0;
     margin-top: 4rem;
 }
+
+/** SOBRE NOSOTROS **/
+@media (min-width: 768px) {
+    /* Resolucion con flex-box */
+    .nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nosotros__imagen {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .nosotros__texto {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    /* Resolucion con Grid */
+    .nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
